@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用DIV+CSS完成首页重构</title>
+		<style>
+			#father{
+				border: 1px solid red;
+				width: 1500px;
+				height: 2350px;
+				margin: auto;
+			}
+			#logo{
+				border: 1px solid black;
+				width: 1500px;
+				height: 50px;
+			}
+			.top{
+				border: 1px solid blue;
+				width: 498px;
+				height: 100%;
+				float: left;
+			}
+			#top{
+				padding-top: 11px;
+				height: 39px;
+			}
+			#menu{
+				border: 1px solid red;
+				width: 1500px;
+				height: 50px;
+				background-color: black;
+			}
+			ul li{
+				display: inline;
+				color: white;
+				
+			}
+			#product{
+				border: 1px solid blue;
+				width: 1500px;
+				height: 554px;
+			}
+			#product_top{
+				border: 1px solid red;
+				width: 1500px;
+				height:50px;
+			}
+			#product_buttom_left{
+				border: 1px solid black;
+				width: 240px;
+				height: 500px;
+				float: left;
+			}
+			#product_buttom_right{
+				border: 1px solid blue;
+				width: 1256px;
+				height: 500px;
+				float: left;
+			}
+			#big{
+				border: 1px solid red;
+				width: 625px;
+				height: 250px;
+				float: left;
+			}
+			#small{
+				border: 1px solid black;
+				width: 207px;
+				height: 250px;
+				float: left;	
+				text-align: center;
+			}
+			#bottom{
+				text-align: center;
+			}
+			a{
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father">
+			<!--logo部分-->
+			<div id="logo">
+				<div class="top">
+					<img src="../img/logo2.png" height="100%"/>
+				</div>
+				<div class="top">
+					<img src="../img/header.png" height="100%"/>
+				</div>
+				<div class="top" id="top">
+					<a href="#">登陆</a>
+					<a href="#">注册</a>
+					<a href="#">购物车</a>
+				</div>
+			</div>
+			<!--导航栏部分-->
+			<div id="menu">
+				<ul>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><li style="font-size: 20px;">首页</li></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><li>手机数码</li></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><li>电脑办公</li></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><li>鞋靴箱包</li></a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#"><li>家用电器</li></a>
+				</ul>
+			</div>
+			<!--轮播图部分-->
+			<div id="">
+				<img src="../img/1.jpg" width="100%"/>
+			</div>
+			<!--最新商品-->
+			<div id="product">
+				<div id="product_top">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<span style="font-size: 25px; padding-top: 8px;">最新商品</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="../img/title2.jpg"/>
+				</div>
+				<div id="product_buttom">
+					<div id="product_buttom_left">
+						<img src="../img/big01.jpg" width="100%" height="100%"/>
+					</div>
+					<div id="product_buttom_right">
+						<div id="big">
+							<img src="../img/middle01.jpg" width="100%" height="100%"/>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--广告图片-->
+			<div>
+				<img src="../img/ad.jpg" width="100%"/>
+			</div>
+			<!--热门商品-->
+			<div id="product">
+				<div id="product_top">
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<span style="font-size: 25px; padding-top: 8px;">热门商品</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="../img/title2.jpg"/>
+				</div>
+				<div id="product_buttom">
+					<div id="product_buttom_left">
+						<img src="../img/big01.jpg" width="100%" height="100%"/>
+					</div>
+					<div id="product_buttom_right">
+						<div id="big">
+							<img src="../img/middle01.jpg" width="100%" height="100%"/>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+						<div id="small">
+							<img src="../img/small03.jpg"/><br />
+							<span style="color: gray;"><a href="#">电炖锅</a></span><br /><br />
+							<span style="color: red;">¥399</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--广告图片-->
+			<div>
+				<img src="../img/footer.jpg" width="100%"/>
+			</div>
+			<!--友情链接-->
+			<div id="bottom">
+				<a href="#">关于我们</a>
+				<a href="#">联系我们</a>
+				<a href="#">招贤纳士</a>
+				<a href="#">法律声明</a>
+				<a href="#">友情链接</a>
+				<a href="#">支付方式</a>
+				<a href="#">配送方式</a>
+				<a href="#">服务声明</a>
+				<a href="#">广告声明</a>
+				<p>
+					Copyright © 2005-2016 传智商城 版权所有 
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
