@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 热加载主配置 -->
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="crm" namespace="/" extends="struts-default">
+		<action name="CustomerAction_*" class="com.zl.web.action.CustomerAction" method="{1}">
+			<result name="list">/jsp/customer/list.jsp</result>
+			<result name="toList" type="redirectAction">
+				<param name="actionName">CustomerAction_list</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+	</package>
+	
+</struts>
